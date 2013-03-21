@@ -1,0 +1,43 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+en:
+  layouts:
+    application:
+      title: "Yoga School"
+  members:
+    form:
+      name: "Name"
+      last_name: "Last name"
+      birth_date: "Birth date"
+      phone: "Contact phone"
+      email: "Email"
+      address: "Address"
+    index:
+      members_list: "Members List"
+      new_member: "New member"
+    new:
+      new_member: "New member"
+  label:
+    name: "Name"
+    last_name: "Last name"
+    birth_date: "Birth date"
+    contact_phone: "Contact phone"
+    email: "Email"
+    address: "Address"
+    actions: "Actions"
+    show: "Show"
+    edit: "Edit"
+    delete: "Delete"
+    take_picture: "Take picture"
+  prompt:
+    name: "Name:"
+    last_name: "Last name:"
+    birth_date: "Birth date:"
+    contact_phone: "Contact phone:"
+    email: "Email:"
+    address: "Address:"
+  helpers:
+    submit:
+      create: "Save %{model}"
+      update: "Update %{model}"
+

@@ -1,0 +1,6 @@
+<h1><%=t('.new_member')%></h1>
+<% content_for :javascript_includes do %>
+   <%= javascript_include_tag 'views/members/members' %>
+   <%= javascript_include_tag 'views/members/member_new' %>
+<% end %>
+<%= render 'form' %>

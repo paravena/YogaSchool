@@ -1,0 +1,8 @@
+<% content_for :javascript_includes do %>
+    <%= javascript_include_tag 'views/members/members' %>
+    <%= javascript_include_tag 'views/members/member_edit' %>
+<% end %>
+<h1><%=t('.edit_member')%></h1>
+
+<%= render 'form' %>
+

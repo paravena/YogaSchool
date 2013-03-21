@@ -1,0 +1,50 @@
+<h1><%= t('.members_list')%></h1>
+<br>
+<br>
+<div class="container">
+  <button class="btn">
+    <%= link_to t('.new_member'), new_member_path %>
+  </button>
+    <br>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th><%=t('label.name')%></th>
+            <th><%=t('label.last_name')%></th>
+            <th><%=t('label.birth_date')%></th>
+            <th><%=t('label.phone')%></th>
+            <th><%=t('label.email')%></th>
+            <th><%=t('label.address')%></th>
+            <th><%=t('label.actions')%></th>
+          </tr>
+        </thead>
+        <tbody>
+        <% @members.each do |member| %>
+            <tr>
+                <td><%= image_tag thumbnail_member_path(member) %></td>
+                <td><%= member.name %></td>
+                <td><%= member.last_name %></td>
+                <td><%= member.birth_date %></td>
+                <td><%= member.contact_phone %></td>
+                <td><%= member.email %></td>
+                <td><%= member.address %></td>
+                <td>
+                    <div class="btn-group">
+                        <button class="btn">
+                            <%= link_to t('label.edit'), edit_member_path(member) %>
+                        </button>
+                        <button class="btn">
+                            <%= link_to t('label.delete'), member, confirm: 'Are you sure?', method: :delete %>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        <% end %>
+        </tbody>
+    </table>
+    <button class="btn">
+        <%= link_to t('.new_member'), new_member_path %>
+    </button>
+</div>

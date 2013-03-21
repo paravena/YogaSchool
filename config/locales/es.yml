@@ -1,0 +1,96 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+es:
+  layouts:
+    application:
+      title: "Escuela de Yoga"
+      members: "Alumnos"
+      rooms: "Salas"
+
+  members:
+    form:
+      name: "Nombre"
+      last_name: "Apellido"
+      birth_date: "Fecha nacimiento"
+      contact_phone: "Telefono contacto"
+      email: "Email"
+      address: "Direccion"
+    index:
+      members_list: "Listado de Alumnos"
+      new_member: "Nuevo Alumno"
+    new:
+      new_member: "Nuevo alumno"
+    edit:
+      edit_member: "Editar alumno"
+  label:
+    name: "Nombre"
+    last_name: "Apellido"
+    birth_date: "Fecha nacimiento"
+    phone: "Telefono contacto"
+    email: "Email"
+    address: "Direccion"
+    actions: "Acciones"
+    show: "Mostrar"
+    edit: "Editar"
+    delete: "Eliminar"
+    take_picture: "Tomar foto"
+  prompt:
+    name: "Nombre:"
+    last_name: "Apellido:"
+    birth_date: "Fecha nacimiento:"
+    phone: "Telefono contacto:"
+    email: "Email:"
+    address: "Direccion:"
+    actions: "Acciones:"
+  date:
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+    abbr_month_names:
+      -
+      - ene
+      - feb
+      - mar
+      - abr
+      - may
+      - jun
+      - jul
+      - ago
+      - sep
+      - oct
+      - nov
+      - dic
+    month_names:
+      -
+      - enero
+      - febrero
+      - marzo
+      - abril
+      - mayo
+      - junio
+      - julio
+      - agosto
+      - septiembre
+      - octubre
+      - noviembre
+      - diciembre
+    order:
+      - :day
+      - :month
+      - :year
+  activerecord:
+    models:
+      member: "Alumno"
+    attributes:
+      member:
+        name: "Nombre"
+        last_name: "Apellido"
+        birth_date: "Fecha nacimiento"
+        contact_phone: "Telefono contacto"
+        email: "Email"
+        address: "Direccion"
+  helpers:
+    submit:
+      create: "Grabar %{model}"
+      update: "Actualizar %{model}"
