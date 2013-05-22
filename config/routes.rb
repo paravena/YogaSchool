@@ -1,4 +1,6 @@
 YogaSchool::Application.routes.draw do
+  resources :users
+
     scope '(:locale)' do
         resources :members do
           get :picture, on: :member
